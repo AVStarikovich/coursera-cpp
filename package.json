@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && ./bundle",
-    "build": "g++ -std=c++11 main.cpp -o bundle",
+    "start": "npm run build && ./bundle.bin",
+    "build": "g++ -std=c++11 main.cpp -o bundle.bin",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
