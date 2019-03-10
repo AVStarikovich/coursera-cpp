@@ -1,3 +1,3 @@
-bundle.bin
-main.cpp
-.vscode
+./bundle.bin
+./main.cpp
+./.vscode
