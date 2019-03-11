@@ -7,6 +7,8 @@ int main () {
   int n;
   vector<int> some;
 
+  cout << 11 % 2;
+
   cin >> n;
 
   while (n != 1) {
