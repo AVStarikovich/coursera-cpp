@@ -1,22 +1,30 @@
 #include <iostream>
-#include <algorithm>
+#include <vector>
 using namespace std;
 
-// Наибольший общий делитель
+// Двоичные числа
 int main () {
-  int a, b;
+  int n;
+  vector<int> some;
 
-  cin >> a >> b;
 
-  while (a != 0 && b != 0) {
-    if (a >= b) {
-      a = a % b;
+  cin >> n;
+
+  while (n != 1) {
+    if (n % 2 == 0) {
+      some.push_back(0);
     } else {
-      b = b % a;
+      some.push_back(1);
     }
+
+    n /= 2;
   }
 
-  cout << a + b;
+  some.push_back(1);
+
+  for (int i = some.size() - 1; i >= 0; i--) {
+    cout << some[i];
+  }
 
   return 0;
 }
