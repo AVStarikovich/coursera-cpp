@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Факториал
 int main () {
   int n, result = 1;
 
