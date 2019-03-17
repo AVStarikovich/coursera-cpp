@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
-// Полиндром
 bool IsPalindrom(string word) {
   bool result = true;
 
@@ -19,12 +19,17 @@ bool IsPalindrom(string word) {
   return result;
 }
 
-int main () {
-  string word;
+vector<string> PalindromFilter(
+  vector<string> words,
+  int minLength
+) {
+  vector<string> result;
 
-  cin >> word;
+  for (auto word : words) {
+    if (IsPalindrom(word) && word.size() >= minLength) {
+      result.push_back(word);
+    }
+  }
 
-  cout << IsPalindrom(word);
-
-  return 0;
+  return result;
 }

@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 // Факториал
 int Factorial (int n) {
   int result = 1;
@@ -11,14 +8,4 @@ int Factorial (int n) {
   }
 
   return result;
-}
-
-int main () {
-  int n;
-
-  cin >> n;
-
-  cout << Factorial(n);
-
-  return 0;
 }
