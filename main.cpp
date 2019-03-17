@@ -3,13 +3,14 @@
 #include <vector>
 using namespace std;
 
-void Reverse(vector<int>& array) {
-  int tmp;
 
-  for (int i = 0; i < array.size() / 2; i++) {
-    tmp = array[i];
-    array[i] = array[array.size() - 1 - i];
-    array[array.size() - 1 - i] = tmp;
-  };
+int main() {
+  vector<int> some = {1, 2, 3, 4, 5};
+
+  cout << some.back();
+
+
+  for (auto item : some) {
+    cout << item;
+  }
 }
-
